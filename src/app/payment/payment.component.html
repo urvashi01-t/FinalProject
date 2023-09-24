@@ -1,0 +1,27 @@
+<p>payment works!</p>
+<table class="table table-striped" name ="bills">
+    <thead>
+        <tr>
+            <th >ID</th>
+            <th>Name</th>
+            <th>Customer Id</th>
+            <th>Phone Number</th>
+            <th>Rate</th>
+            <th>Discount</th>
+            <th>Amount</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let cust of paidBills">
+            <td >{{cust.billId}}</td>
+            <td>{{cust.customerId.name}}</td>
+            <td>{{cust.customerId.customerId}}</td>
+            <td>{{cust.customerId.phoneNumber}}</td>
+            <td>{{cust.paymentModeId.rate}}</td>
+            <td>{{cust.paymentModeId.discountPercentage}}</td>
+            <td>{{cust.amount}}</td>
+            <td>{{cust.status}}</td>
+        </tr>
+    </tbody>
+  </table>

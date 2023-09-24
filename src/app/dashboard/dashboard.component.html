@@ -1,0 +1,12 @@
+<app-header></app-header>
+<header>
+  <nav>
+    <a routerLink="/login">Login</a>
+    <a routerLink="/dashboard">Dashboard</a>
+  </nav>
+</header>
+    <ul>
+      <li *ngFor="let item of data">
+        {{ item.name }}: {{ item.value }}
+      </li>
+    </ul>
